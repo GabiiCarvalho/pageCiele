@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@theme {
+  /* Cores personalizadas */
+  --color-azul-profundo: #0A2540;
+  --color-azul-medio: #1E4E79;
+  --color-azul-claro: #3B82F6;
+  --color-azul-suave: #E0F2FE;
+
+  --color-dourado: #C9A227;
+  --color-dourado-claro: #E8D5A3;
+  --color-dourado-escuro: #A8871E;
+
+  /* Fonte */
+  --font-sans: 'Inter', system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #ffffff;
+  color: #1f2937;
+}
