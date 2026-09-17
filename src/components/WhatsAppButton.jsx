@@ -3,7 +3,7 @@ import { useState } from 'react';
 export default function WhatsAppButton() {
   const [hovered, setHovered] = useState(false);
 
-  const telefone = '5511999999999'; // Substitua pelo número real
+  const telefone = '5547996476856';
   const mensagem = encodeURIComponent(
     'Olá! Gostaria de saber mais sobre o Residencial Emanuele da Ciele Empreendimentos.'
   );
