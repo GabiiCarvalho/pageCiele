@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { asset } from '../config';
 
 export default function Tipologias() {
   const [imagemAmpliada, setImagemAmpliada] = useState(null);
@@ -23,9 +24,9 @@ export default function Tipologias() {
       badge: null,
       destaque: false,
       galerias: {
-        planta: ['/plantas/apto.png'],
-        sacada: ['/plantas/sacadaIntegrada.png'],
-        interiores: ['/imagens/interior.png'],
+        planta: [asset('imagens/plantas/apto.png')],
+        sacada: [asset('imagens/plantas/Sacada_Integrada.png')],
+        interiores: [asset('imagens/Ciele_Apartamento_PVT4_02.jpg')],
       },
     },
     {
@@ -42,11 +43,11 @@ export default function Tipologias() {
       badge: 'ÚNICA UNIDADE — 4º ANDAR',
       destaque: true,
       galerias: {
-        planta: ['/plantas/duplex.jpeg'],
-        sacada: ['/plantas/rooftop_duplex.jpeg'],
+        planta: [asset('imagens/plantas/duplex.jpeg')],
+        sacada: [asset('imagens/plantas/rooftop_duplex.jpeg')],
         interiores: [
-          '/imagens/Ciele_Apartamento_Rooftop_03.jpg',
-          '/imagens/Ciele_Apartamento_Rooftop_05-2.jpg',
+          asset('imagens/Ciele_Apartamento_Rooftop_03.jpg'),
+          asset('imagens/Ciele_Apartamento_Rooftop_05-2.jpg'),
         ],
       },
     },
@@ -180,7 +181,6 @@ export default function Tipologias() {
                   </span>
                 )}
 
-                {/* Abas — agora com altura mínima e sem quebra */}
                 <div
                   className={`flex border-b min-h-[48px] ${
                     tipo.destaque ? 'border-white/10' : 'border-gray-100'
@@ -208,7 +208,6 @@ export default function Tipologias() {
                   })}
                 </div>
 
-                {/* Imagem principal */}
                 <div className="relative aspect-[4/3] bg-azul-suave/40 group overflow-hidden">
                   <img
                     src={imagemAtual || gerarFallback(tipo, aba)}
@@ -244,7 +243,6 @@ export default function Tipologias() {
                   </div>
                 </div>
 
-                {/* Miniaturas */}
                 {listaImagens.length > 1 && (
                   <div
                     className={`flex gap-2 px-4 py-3 overflow-x-auto border-b ${
@@ -277,7 +275,6 @@ export default function Tipologias() {
                   </div>
                 )}
 
-                {/* Conteúdo */}
                 <div className="p-8 flex flex-col flex-1">
                   <div className="flex items-start justify-between gap-4 mb-2">
                     <div>

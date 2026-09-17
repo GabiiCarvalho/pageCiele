@@ -1,42 +1,38 @@
 import { useState } from 'react';
+import { asset } from '../config';
 
 export default function Galeria() {
   const [filtro, setFiltro] = useState('todas');
   const [fotoAberta, setFotoAberta] = useState(null);
 
   const fotos = [
-    // Fachada / externas
     {
       id: 1,
-      src: '/imagens/fachada.png',
+      src: asset('imagens/fachada.png'),
       categoria: 'fachada',
       titulo: 'Fachada Principal',
     },
     {
       id: 2,
-      src: '/imagens/noturno.png',
+      src: asset('imagens/noturno.png'),
       categoria: 'fachada',
       titulo: 'Fachada ao Entardecer',
     },
-
-    // Interiores / apartamento 88m²
     {
       id: 3,
-      src: '/imagens/Ciele_Apartamento_PVT4_02.jpg',
+      src: asset('imagens/Ciele_Apartamento_PVT4_02.jpg'),
       categoria: 'interiores',
       titulo: 'Living do Apartamento Tipo',
     },
-
-    // Rooftop do duplex
     {
       id: 4,
-      src: '/imagens/Ciele_Apartamento_Rooftop_03.jpg',
+      src: asset('imagens/Ciele_Apartamento_Rooftop_03.jpg'),
       categoria: 'rooftop',
       titulo: 'Rooftop Privativo',
     },
     {
       id: 5,
-      src: '/imagens/Ciele_Apartamento_Rooftop_05-2.jpg',
+      src: asset('imagens/Ciele_Apartamento_Rooftop_05-2.jpg'),
       categoria: 'rooftop',
       titulo: 'Vista do Rooftop',
     },

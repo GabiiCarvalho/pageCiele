@@ -1,3 +1,5 @@
+import { asset } from '../config';
+
 export default function Hero() {
   return (
     <section className="relative h-screen flex items-center justify-center bg-azul-profundo overflow-hidden">
@@ -6,7 +8,7 @@ export default function Hero() {
         className="absolute inset-0 bg-cover bg-center opacity-30"
         style={{
           backgroundImage:
-            "url('/imagens/fachada.png')",
+            `url('${asset('imagens/fachada.png')}')`,
         }}
       />
 
