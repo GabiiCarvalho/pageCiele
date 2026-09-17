@@ -25,7 +25,7 @@ export default function Tipologias() {
       destaque: false,
       galerias: {
         planta: [asset('imagens/plantas/apto.png')],
-        sacada: [asset('imagens/plantas/Sacada_Integrada.png')],
+        sacada: [asset('imagens/plantas/sacadaIntegrada.png')],
         interiores: [asset('imagens/Ciele_Apartamento_PVT4_02.jpg')],
       },
     },
