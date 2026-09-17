@@ -5,7 +5,7 @@ export default function Localizacao() {
     { label: 'Transporte', valor: 'A 2 min' },
   ];
 
-  const linkWhatsApp = `https://wa.me/5511999999999?text=${encodeURIComponent(
+  const linkWhatsApp = `https://wa.me/5547996476856?text=${encodeURIComponent(
     'Olá! Gostaria de agendar uma visita ao Residencial Emanuele.'
   )}`;
 
